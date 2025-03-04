@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brother HL-12380DW</title>
+    <link rel="stylesheet" href="../CSS/style2.css" />
+    <link rel="stylesheet" href="/css/stylesss.css">
+  </head>
+  <body background="../Images/background.png">
+    <!-- Product gallery -->
+    <div class="gallery">
+      <!-- Container for product 1 -->
+      <div class="container" id="p1">
+        <h3>Brother HL-l2380DW</h3>
+
+        <!-- Product image with id attribute -->
+        <img 
+          id="productImage"
+          src="../Images/printer1.png"
+          height="400px"
+          width="400px"
+        />
+        <!-- Button to toggle between images -->
+        <button onclick="toggleImage()"><b>Show Next Image</b></button>
+        <div class="details">
+          <!-- Product details -->
+          <p>Inkjet Technology</p>
+          <!-- Price details -->
+          <h6>
+            <del>99.99$</del>
+            <h5>80.00$</h5>
+          </h6>
+          <ul class="ul1">
+            Automatic Two-Sided Printing<br />
+            Upto 36 pages per minute<br />
+            Upto 50 sheets<br />
+            automatic document feeder Easy Interface<br />
+          </ul>
+          <!-- Buttons for adding to cart and buying -->
+          <div class="button-container">
+            <button class="AddToCart">
+              <img src="../Images/cart2.png" height="50px" width="50px" />Add to
+              Cart
+            </button>
+            <button class="buy" onclick="buy()">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="returnBack">
+      <a href="Products.html">Click to return to Products page</a>
+    </div>
+    <!-- Hidden div for thank you message -->
+    <div class="hidden-div" id="thankYouDiv">
+      <div class="thank-you-card">
+        <!-- Close button for thank you message -->
+        <button class="close-button-thank-you" onclick="closeThankYouDiv()">
+          X
+        </button>
+        <!-- Thank you message -->
+        <h2>Thank You for Shopping at InkBuzz</h2>
+        <p>Your order has been placed successfully.</p>
+      </div>
+    </div>
+
+    <!-- Hidden div for shopping cart message -->
+    <div class="hidden-div" id="shopping-cart">
+      <div class="shopping-cart">
+        <!-- Close button for shopping cart message -->
+        <button
+          class="close-button-shopping-cart"
+          onclick="closeShoppingCartDiv()"
+        >
+          X
+        </button>
+        <!-- Shopping cart message -->
+        <h2>Your Item has been added to the cart Successfully</h2>
+        <p></p>
+      </div>
+    </div>
+
+    <script>
+      var images = [
+        "../Images/printer1.png",
+        "../Images/printer1(2).png",
+        "../Images/printer1(3).png",
+      ]; // Array of image URLs
+      var currentImageIndex = 0;
+
+      // Function to toggle between images
+      function toggleImage() {
+        var productImage = document.getElementById("productImage");
+        currentImageIndex = (currentImageIndex + 1) % images.length; // Increment index and loop back if necessary
+        productImage.src = images[currentImageIndex]; // Set the image source to the next image
+      }
+
+      function toggleThankYouDiv() {
+        var thankYouDiv = document.getElementById("thankYouDiv");
+        thankYouDiv.style.display =
+          thankYouDiv.style.display === "none" ? "block" : "none";
+      }
+
+      // Function to close thank you message div
+      function closeThankYouDiv() {
+        var thankYouDiv = document.getElementById("thankYouDiv");
+        thankYouDiv.style.display = "none";
+      }
+
+      // Function to close shopping cart message div
+      function closeShoppingCartDiv() {
+        var shoppingCartDiv = document.getElementById("shopping-cart");
+        shoppingCartDiv.style.display = "none";
+      }
+
+      // Event listener for close button in shopping cart message
+      var closeButtonShoppingCart = document.querySelector(
+        ".close-button-shopping-cart"
+      );
+      if (closeButtonShoppingCart) {
+        closeButtonShoppingCart.addEventListener("click", function () {
+          closeShoppingCartDiv();
+        });
+      }
+
+      // Event listeners for buy buttons
+      var buyButtons = document.querySelectorAll(".buy");
+      buyButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          toggleThankYouDiv();
+        });
+      });
+
+      // Function to toggle shopping cart message div
+      function toggleShoppingCartDiv() {
+        var shoppingCartDiv = document.getElementById("shopping-cart");
+        shoppingCartDiv.style.display =
+          shoppingCartDiv.style.display === "none" ? "block" : "none";
+      }
+
+      // Event listeners for add to cart buttons
+      var addToCartButtons = document.querySelectorAll(".AddToCart");
+      addToCartButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          toggleShoppingCartDiv();
+        });
+      });
+
+      // Event listener for close button in thank you message
+      var closeButtonThankYou = document.querySelector(
+        ".close-button-thank-you"
+      );
+      if (closeButtonThankYou) {
+        closeButtonThankYou.addEventListener("click", function () {
+          closeThankYouDiv();
+        });
+      }
+    </script>
+  </body>
+</html>

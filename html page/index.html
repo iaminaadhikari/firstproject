@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/css/stylesss.css">
+    <style> /* internal CSS */
+ .main1{
+    width: 100%;
+    height: 650px;
+ }
+ .main2
+ {
+    height: 1000px;
+    background-image: url(/images/Untitled\ design\ \(11\).png);
+    background-repeat: no-repeat; /* So that background doesnot get repeated */
+ }
+ .content{
+    width: 1518px;
+    height: 650px;
+ }
+ .intro1,.intro2,.intro3
+ {
+    width: 407px;
+    height: 500px;
+    margin-top: 40px;
+    border: 2px dashed black;
+ }
+ .intro1:hover,.intro2:hover,.intro3:hover
+ {
+    transform: scale(1.1); /* To make the division pop up by size 1.1 */
+ }
+ .aspect1,.aspect2,.aspect3
+ {
+    width: 410px;
+    height: 150px;
+    margin-top: 60px;
+    border-radius:25px;
+ }
+ .info1:hover,.info2:hover,.info3:hover
+ {
+    transform: scale(1.1);   /* To make the division pop up by size 1.1 */
+ }
+ .type1
+ {
+    width: 40%; 
+    height: 150px; 
+    float: left;
+ }
+ .type2
+ {
+
+    width: 60%; 
+    height: 150px; 
+    float: right;
+ }
+ .write
+ {
+    padding: 20px;
+    text-align: center;
+    font-family: Lemon; /* Using downloaded font */
+    font-weight: 100;
+ }
+ .print
+ {
+    width: 100%; 
+    height: 200px;
+    background-color: white;
+ }
+ .printer1
+ {
+    width: 100%;
+    height: 300px; 
+    background-color: beige;
+ }
+ .para
+ {
+    padding: 5px 10px 5px 10px;
+    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .price
+ {
+    padding: 5px 15px 5px 10px;
+    font-weight: 600;
+    font-family: Lemon;
+ }
+ .discount
+ {
+    padding:  5px 10px 5px 10px;
+    font-size: 18px;
+    color: grey;
+    float: left;
+ }
+ .percent
+ {
+    padding: 5px 10px 10px 25px;
+    float: left;
+    color: green;
+    font-weight: 800;
+    width: 5%;
+    font-size: 18px;
+ }
+ .box
+ {
+    border: 1px solid black;
+    background-color: #d8c2b4;
+    width: 27%;
+    height: 33px;
+    padding-top: 5px;
+    text-align: center;
+    margin-left: 150px;
+    font-family: Acme;
+    font-size: 23px;
+    border-radius: 15px;
+ }
+ .box:hover
+ {
+    transform: scale(1.3); /* Intializing hover effect to view more */
+ }
+ .main3
+ {
+    background-image: url(/images/background.jpg);
+    height: 1350px;
+    background-repeat: no-repeat;
+ }
+ .maintitle
+ {
+    padding-top: 20px;
+    text-align: center;
+ }
+ .description
+ {
+    padding: 20px;
+    text-align: justify;
+ }
+.info1,.info2,.info3
+ {
+    width: 407px;
+    height: 450px;
+    margin-top: 40px;
+    border: 2px dashed black;
+ }
+ .printing
+ {
+    width: 100%; 
+    height: 200px;
+    background-color: white;
+ }
+ .printerno1
+ {
+    width: 100%;
+    height: 250px; 
+    background-color: #f6e4ad;
+ }
+ .box1
+ {
+    border: 1px solid black;
+    background-color: #fffdec;
+    width: 27%;
+    height: 33px;
+    padding-top: 5px;
+    text-align: center;
+    margin-left: 150px;
+    font-family: Acme;
+    font-size: 20px;
+    border-radius: 15px;
+ }
+ .box1:hover
+ {
+    transform: scale(1.3); /* Intializing hover effect to view more */
+ }
+ .box2
+ {
+    border: 1px solid black;
+    background-color: #f3ead3;
+    width: 10%;
+    height: 33px;
+    padding-top: 5px;
+    text-align: center;
+    font-family: Acme;
+    font-size: 20px;
+    margin-left: 500px;
+    margin-top: 10px;
+    border-radius: 15px;
+ }
+ .box2:hover
+ {
+    transform: scale(1.3); /* Intializing hover effect to view more*/
+ }
+ .productlink
+ {
+    text-decoration: none;
+    color: black;
+ }
+    </style>
+</head>
+<body>
+    <!-- initializing a wrapper -->
+    <div class="wrapper">
+        <header class="head"> <!-- initializing header for preparing nav bar -->
+            <div class="logo">
+                <img src="/images/logo.png" width="60%" height="110%"> <!-- inserting logo of website -->
+            </div>
+            <nav> <!-- start of nav bar -->
+                <div class="navigation">
+                    <div class="null">
+                        <ul>
+                            <li class="point"><a href="index.html" target="_blank" class="links">Home</a></li> <!-- Linking to homepage -->
+                            <li  class="point"><a href="Products.html" target="_blank" class="links">Products</a></li> <!-- Linking to product page -->
+                            <li  class="point"><a href="BLOG.HTML" target="_blank" class="links">Blog</a></li> <!-- Linking to blog page -->
+                            <li  class="point"><a href="research.html" target="_blank" class="links">Research</a></li> <!-- Linking to  research age -->
+                            <li  class="point"><a href="meet.html" target="_blank" class="links">About Us</a></li> <!-- Linking to about us -->
+                        </ul>
+                    </div>  
+                </div>
+                <div class="extra"> <!--Initializing div for cart and sign-in page -->
+                    <li  class="cart"><a href="#"><img src="/images/cart.png" width = "55px" height= "51px"></a></li>
+                    <li  class="sign-in"><a href="sign-in.html" target="_blank"><img src="/images/user-icon.png" width="45px" height="45px"></a></li> <!-- Linking to resgistration form -->
+                </div>
+            </nav>
+        </header>
+    </div>
+        <main class="main1">
+            <div class="content">
+                    <video width="1518px" autoplay muted> <!-- autoplay so that video plays by itself on start of webpage-->
+                        <source src="/video/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+                      </video>
+            </div>
+        </main>
+        <main class="main2">    
+            <div style="width: 1365px; height: 320px; ; margin-left: 75px;">    <!-- Intializing a wrapper div for adding services of printer company -->
+                <div class="aspect1" style="background-color: #ffebcd; float: left; margin-left: 25px; ">
+                    <div class="type1">
+                        <img src="/images/delivery.png" width="100%" height="100%" style="padding-top: 5px;">
+                    </div>
+                    <div  class="type2">
+                        <h1 style="padding: 20px; text-align: center;" >Free Delivery</h1><p style="padding-left: 20px; padding-right: 20px; font-size: large; text-align: center;">Fast Delivery to all places of Nepal</p>
+                    </div>
+                </div>
+                <div class="aspect2" style="background-color: #ffebcd; float: left; margin-left: 40px; margin-right: 40px;">
+                    <div class="type1">
+                        <img src="/images/warranty-icon-transparent-warranty-free-png.webp" width="100%" height="100%" style="padding-top: 5px;">
+                    </div>
+                    <div class="type2">
+                        <h1 style="padding: 20px; text-align: center;" >Warranty</h1><p style="padding-left: 20px; padding-right: 20px; font-size: large; text-align: center;">Upto 1 Year of Warranty </p>
+                    </div>
+                </div>
+                <div class="aspect3" style="background-color:#ffebcd; float: right;margin-right: 25px">
+                    <div class="type1">
+                        <img src="/images/refund.png" width="100%" height="100%">
+                    </div>
+                    <div class="type2">
+                        <h1 style="padding: 20px 20px 10px 20px; text-align: center;" >Refundable</h1><p style="padding-left: 20px; padding-right: 20px; font-size: large; text-align: center;">100% Refund in case of faulty product and wrong product</p>
+                    </div>
+                </div>
+            </div>
+            <div style=" width:1365px; height: 700px; margin-left: 75px; background-color: #f6e4ad;"> <!-- Intializing a wrapper div for adding glimpse of products of printer company -->
+                <h1 style="padding-top: 50px; margin-left: 25px; text-align: center; font-family: Bradly; font-size: xxx-large;">Most Ordered Products</h1>
+                  <div class="intro1" style="float: left; margin-left: 25px;">
+                    <div class="print">
+                        <img src="/images/printer1.png" width="80%" height="100%" style="padding-left: 40px;">
+                    </div>
+                    <div class="printer1">
+                        <p class="para" style="color: red; font-weight: 800;">Recommended</p>
+                        <h1 class="write">Thermal Printer</h1>
+                        <p class="para">Color Family: Black, Grey</p>
+                        <p class="price">8.99$</p> 
+                        <div style="width: 32%;">
+                            <div class="discount">
+                                <del>9.8$</del>
+                            </div>
+                            <div class="percent">10%off</div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="box"><a class="productlink" href="product7.html" target="_blank">View More </a></div> <!-- Linking to bill printer product-->
+                    </div>
+                  </div>
+                  <div class="intro2" style="float: left; margin-left: 40px; margin-right: 40px;">
+                    <div class="print">
+                        <img src="/images/printer2.png" width="70%" height="80%" style="padding-left: 60px; padding-top: 20px;">
+                    </div>
+                    <div class="printer1">
+                        <p class="para" style="color: orange; font-weight: 800;">Coming Soon</p>
+                        <h1 class="write">Inkbuzz PBP 1000</h1>
+                        <p class="para">Color Family: Black</p>
+                        <p class="price">7.77$</p> 
+                        <div style="width: 32%;">
+                            <div class="discount">
+                                <del>13$</del>
+                            </div>
+                            <div class="percent">50%off</div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="box"><a class="productlink" href="#" target="_blank">View More </a></div> <!-- "Coming soon" so no link added -->
+                    </div>
+                  </div>
+                  <div class="intro3" style="float: right; margin-right: 25px;">
+                    <div class="print">
+                        <img src="/images/printer3.png" width="60%" height="100%" style="padding-left: 85px;">
+                    </div>
+                    <div class="printer1">
+                        <p class="para" style="color: blue; font-weight: 800;">Popular</p>
+                        <h1 class="write">Color Printer</h1>
+                        <p class="para">Color Family: White, Black, Grey</p>
+                        <p class="price">249.99$</p> 
+                        <div style="width: 32%;">
+                            <div class="discount">
+                                <del>279.88</del>
+                            </div>
+                            <div class="percent">20%off</div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="box"><a class="productlink" href="product8.html" target="_blank">View More </a></div> <!-- Linking to color printer -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main class="main3">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style=" width:1365px; height: 700px; margin-left: 75px; background-color: #f5f0dc"> <!-- Intializing a wrapper div for adding glimpse of blog -->
+                <h1 style="padding-top: 50px; margin-left: 25px; text-align: center; font-family: Bradly; font-size: xxx-large;" >Glimpse of our Blog</h1>
+                  <div class="info1" style="float: left; margin-left: 25px;">
+                    <div class="printing">
+                        <img src="/images/printer4.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="printerno1">
+                       <div class="maintitle"><h2>About our Printers</h2></div>
+                       <div class="description">Our company "InkBuzz" sells printers. In order to catch up with this world of Information and Technology, we have been using top-notch technology. Our printers aim to provide the desired output to the user with minimum harm to environment.</div>
+                        <div class="box1"><a class="productlink" href="BLOG.HTML" target="_blank">View More </a></div> <!-- Linking to blog -->
+                    </div>
+                  </div>
+                  <div class="info2" style="float: left; margin-left: 40px; margin-right: 40px;">
+                    <div class="printing">
+                        <img src="/images/y.png" width="100%" height="100%">
+                    </div>
+                    <div class="printerno1">
+                        <div class="maintitle"><h2>Impact of Technology</h2></div>
+                        <div class="description">Just like how a coin has both heads and tails, in the same way technology also has its own shining points and muddy points. For instance, our printers are well-known in the industry because they print silently and cause less environmental damage than those of other companies. </div>
+                         <div class="box1"><a class="productlink" href="BLOG.HTML" target="_blank">View More </a></div> <!-- Linking to blog -->
+                    </div>
+                  </div>
+                  <div class="info3" style="float: right; margin-right: 25px;">
+                    <div class="printing">
+                        <img src="/images/negative.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="printerno1">
+                        <div class="maintitle"><h2>Negative Impact of technology</h2></div>
+                        <div class="description">Though technology has turned our world into a global village, it has also caused many negative harm to the world. The increasing use of deepfakes, voice changing AI's, ChatGpt,  and many more have brought threat to humanity.</div>
+                        <div class="box1"><a class="productlink" href="BLOG.HTML" target="_blank">View More </a></div> <!-- Linking to blog -->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style="height: 200px; background-color:#fff9e3; margin-left: 75px; margin-right: 79px; border: 2px dashed;"> <!-- Intializing a div for adding inspiration of printer website -->
+                <div style="height: 200px; width: 20%; float: left;">
+                    <img src="/images/research.png"style="width:90%; height: 100%;">
+                </div>
+                <div style="height: 200px; width: 80%; float: right;">
+                <h1 style="font-family: bradly; text-align: center; padding-top: 10px;">Research</h1>
+                <p style="padding: 15px; text-align: justify; font-size: 19px;">Click to see the special qualities that make us stand-out by viewing the comparision between our website "Inkbuzz" and other well-known websites such as Daraz, GoogleStore, Chobani, etc.</p>
+                <div class="box2"><a class="productlink" href="research.html" target="_blank">View More </a></div> <!-- Linking to research webpage -->
+                </div>
+            </div>
+            <div style="height: 180px; background-color:#fff9e3; margin-left: 75px; margin-right: 79px; border: 2px dashed;"> <!-- Intializing a div for adding faces behind the making of printer website -->
+                <div style="height: 180px; width: 20%; float: left;">
+                    <img src="/images/633281-200.png"style="width:70%; height: 100%; padding-left: 40px;">
+                </div>
+                <div style="height: 180px; width: 80%; float: right;">
+                <h1 style="font-family: bradly; text-align: center; padding-top: 20px;">About Us</h1>
+                <p style="padding: 15px; text-align: justify; font-size: 19px;">Tap to See the faces behind this website. This includes the resumes of the four group members who were vital in creating these webpages. </p>
+                <div class="box2"><a class="productlink" href="meet.html" target="_blank">View More </a></div> <!-- Linking to about us webpage -->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot"> <!-- Initializaing wrapper div to creater footer of website -->
+                <table class="table1" width="43%">
+                    <tr>
+                        <th style="font-size: 21px;">Legal Terms</th>
+                        <th style="font-size: 21px;">Customer Care</th>
+                    </tr>
+                    <tr>
+                        <td>Website Terms</td>
+                        <td>Track your Order</td>
+                    </tr>
+                    <tr>
+                        <td>Privacy Policy</td>
+                        <td>Returns and Exchnages</td>
+                    </tr>
+                    <tr>
+                        <td>Supplier Code of Conduct</td>
+                        <td>Cancelling or Changing an order</td>
+                    </tr>
+                    <tr>
+                        <td>Terms of services</td>
+                        <td>Damaged or defected Items</td>
+                    </tr>
+                </table>
+                <div class="entry">
+                    <table class="table3" width="25%">
+                        <tr>
+                            <td>
+                                <form> <!-- Opening form to enter region and suggestion of user -->
+                                    <select name="Region"> 
+                                        <option value="1">Choose Your Region</option>
+                                        <option value="2"> Nepal </option>
+                                        <option value="3">India</option>
+                                        <option value="4"> China</option>
+                                        <option value="5">Japan</option>
+                                    </select>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <form class="form1">
+                                <textarea rows="4" cols="25" name="message" placeholder="Enter suggestions for us"></textarea> <!-- Use of "cols" and "rows" to define number of rows and column of textarea -->
+                                <br>
+                                <br>
+                                <input type="submit" value="Submit">
+                            </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table class="table2" width="37%">
+                        <tr>
+                            <td rowspan="2"><img class="image" src="/images/location.png" width="50px"></td>
+                            <td style="padding-left: 37px;">977-9867890234</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 35px;">Thapagaun-10, Kathmandu, Nepal</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="foot1"> <!-- Initializaing another wrapper div to creater bottom part of footer of website -->
+                <div class="copyright">
+                    &copy; <b>2023 InkBuzz.</b> All Rights Reserved <!-- Use of "&copy" to display copyright symbol -->
+                </div>
+                <div class="media">
+                    <div class="socials">
+                        <ul>
+                        <li class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/instagram.png"></a></li>
+                        <li  class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/facebook.png"></a></li>
+                        <li  class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/linkedin.png"></a></li>
+                        <li  class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/twitter.png"></a></li>
+                        <li  class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/youtube.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emoji">Visit again &nbsp;<b>ʕ´•ᴥ•`ʔ</b></div>
+            </div>
+        </footer>
+</body>
+</html>

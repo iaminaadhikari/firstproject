@@ -1,0 +1,186 @@
+* /* code for all parts of webpage */
+{
+    margin: 0px;
+}
+.wrapper{
+    width: 100%;
+    height: 100px;
+}
+.head{
+    width: 100%;
+    height: 100px;
+    background-color: #efe6dc;
+    position: fixed;                /* To prevent navbar from moving when scrolled down */           
+    box-shadow: 0px 0px 15px;         
+    z-index: 10;                    /* To make webpage slowly scroll up and down below the navbar so that when the page is scrolled the page doesnot block the navbar */
+}
+.logo{
+    width: 15%;
+    height: 100px;
+    float: left;                    /* To make the division remain in left side of the wrapper division */
+}
+nav{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.extra
+{
+    width: 16%;
+    height: 100px;
+    float: right;                   /* To make the division remain in right side of the wrapper division */
+}
+.navigation{
+    width: 66%;
+    height: 100px;
+    float: left;
+}
+.point, .cart, .sign-in{
+    display: inline;                /* To display the listed items in same line */
+}
+@font-face {
+    font-family: Salsa;
+    src: url(/fonts/Salsa/Salsa-Regular.ttf);   /* Use of downloaded fonts */
+}
+@font-face {
+    font-family: Lemon;
+    src: url(/fonts/Lemon/Lemon-Regular.ttf);
+}
+@font-face {
+    font-family: Bradly;
+    src: url(/fonts/bradley-hand-itc/BRADHITC.TTF);
+}
+@font-face {
+    font-family: Rubik;
+    src: url(/fonts/Rubik_Burned/RubikBurned-Regular.ttf);
+}
+.point{
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Salsa;
+}
+.cart, .sign-in{
+    text-decoration: none;
+    padding-right: 20px;
+}
+.cart img, .sign-in img{
+    padding-top: 20px;
+}
+.cart img:hover, .sign-in img:hover
+{
+    transform: scale(1.2);
+}
+.links{
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    transition: 0.6s ease-in-out;       /* hover effect occurs after 0.6s and with slow speed at slow and end */
+
+}
+.null
+{
+    height: 65px;
+    padding-top: 30px;
+}
+.null ul {
+    margin-top: 5px; 
+ }
+ .null ul li{
+    letter-spacing : 1.7px;
+ }
+.point a:hover              /* intializing the changes which occurs when you hover over the links */
+{
+    font-size: 30px;        /* increases the font size of the hovered link */
+    color: chocolate;      /* changes the font color of hovered link to chocolate */ 
+}
+.point a:active
+{
+    color: blue;
+}
+.point a:visited
+{
+    color: #236180;
+}
+.foot
+{
+    height: 160px;
+    width: 100%;
+    border-bottom: 3px solid;   /* providing margin only to bottom of the division */
+}
+.table1
+{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    float: left;
+}
+.image
+{
+    padding-left: 30px;
+}
+.table2
+{
+    padding-left: 80px;
+    padding-top: 30px;
+    font-size: 23px;
+}
+.entry
+{
+   float: left; 
+}
+.table3
+{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.form1 input
+{
+    margin-left: 70px;
+}
+.foot1
+{
+    height: 75px;
+    width: 100%;
+}
+.copyright
+{
+    padding-top: 25px;
+    padding-left: 20px;
+    width: 24%;
+    float: left;
+    font-size: 22px;
+    height: 40px;
+}
+.media
+{
+    width: 50%;
+    height: 60px;
+    float: left;
+    padding-top: 15px;
+}
+.socials
+{
+    text-align: center;
+    width: 100%;
+}
+.socialmedia
+{
+    width: 45px;
+}
+.emoji
+{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 25px; 
+    float: right;
+    width: 24%;
+}
+footer
+{
+    background-color: #Fffada;
+}
+.socials img:hover
+{
+    transform: scale(1.2);      /* Intializing hover effect to image links of footer */
+}

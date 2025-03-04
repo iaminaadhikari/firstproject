@@ -1,0 +1,38 @@
+.body1{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style for the main blog container, centering text */
+.blog{
+    text-align: center;
+}
+
+/* Body styles, setting a background image with no repeat and covering the entire viewport */
+body{
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Flexbox styling for image-div, used in various sections */
+.image-div {
+    display: flex;
+    margin-top: 42px; /* Margin at the top for spacing */
+}
+
+/* Styling for content heading within image-div */
+.content h1 {
+    margin-bottom: 12px; /* Margin below heading for spacing */
+}
+
+/* Styling for a specific type of image-div with class image3 */
+.image-div.image3{
+    border-radius: 25px; /* Border radius for rounded corners */
+}
+
+
+
+
+

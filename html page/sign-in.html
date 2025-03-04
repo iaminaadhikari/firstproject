@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Now !!!!</title>
+    <link rel="stylesheet" href="/css/stylesss.css">
+    <style>
+        .labelling
+        {
+            font-size: 28px;
+            font-family: Salsa;
+        }
+        #fname,#lname,#email,#dob, #password
+        {
+            height: 40px;
+            font-size: 20px;
+            width: 300px;
+            font-family: lemon;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .genders
+        {
+            display: inline;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body background="/images/Untitled design (15).png">
+    <div class="wrapper"> <!--Intializing a wrapper div --> 
+        <header class="head"> <!-- same navbar code from homepage -->
+            <div class="logo">
+                <img src="/images/logo.png" width="60%" height="110%">
+            </div>
+            <nav>
+                <div class="navigation">
+                    <div class="null">
+                        <ul>
+                            <li class="point"><a href="index.html" target="_blank" class="links">Home</a></li>
+                            <li  class="point"><a href="Products.html" target="_blank" class="links">Products</a</li>
+                            <li  class="point"><a href="BLOG.HTML" target="_blank" class="links">Blog</a</li>
+                            <li  class="point"><a href="research.html" target="_blank" class="links">Research</a</li>
+                            <li  class="point"><a href="meet.html" target="_blank" class="links">About Us</a</li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="extra">
+                    <li  class="cart"><a href="#"><img src="/images/cart.png" width = "55px" height= "51px"></a></li>
+                    <li  class="sign-in"><a href="sign-in.html" target="_blank"><img src="/images/user-icon.png" width="45px" height="45px"></a></li>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div style="padding-top: 30px; padding-bottom: 25px; text-align: center; font-family: acme; height: 70px; font-size: 33px;">
+       <h1> Registration Form</h1>
+    </div>
+    <div style="background-color: #0ea5d3; height: 470px; width: 40%; margin-left: 450px; padding-left: 90px; padding-top: 50px; border-radius: 25px;">
+        <form name="messageform" onsubmit="validateForm()"> <!-- Start of form whose name is "messageform" and funtion "validateForm" is assigned when the submit button is clicked  -->
+            <label class="labelling">First Name: &nbsp;&nbsp;</label><input type="text" name="fname" id="fname"><br><br> <!--Input text whose name and id is "fname"-->
+            <label class="labelling">Last Name: &nbsp;&nbsp;&nbsp;</label><input type="text" name="lname" id="lname"><br><br> <!--Input text whose name and id is "lname"-->
+            <label class="labelling">Date of Birth: </label><input type="date" name="dob" id="dob" value="dob"> <!-- Date selector whose name, id, value is "dob"-->
+            <br> 
+            <br>
+            <label class="labelling">Gender: &nbsp;&nbsp;&nbsp;&nbsp;</label><input type="radio" name="gender" value="male"><h2 class="genders">Male</h2> <!-- Radio Button whose name is "gender" value is "male"-->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" value="female"><h2 class="genders">Female</h2> <!-- Radio Button whose name is "gender" value is "female"-->
+            <br><br>
+            <label class="labelling">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="email" id="email" placeholder="name@domain.com"> <!--Email holder whose name, id is "email" and placeholder or message shown before entering text is "name@domain.com"-->
+            <br>
+            <br>
+            <label class="labelling">Password: </label><input type="password" name="password" id="password" placeholder="6 digit"> <!-- Password holder whose name, id is "password" and placeholder or message shown before entering text is "6digits"-->
+            <br>
+            <br>
+            <br>
+            <input type="submit" class="labelling" style="margin-left: 180px;" value="Submit Button" id="submit"> <!-- Submit button whose id is "submit" and value is "Submit Button"-->
+         </form>
+         <script src="/javascript/sign-in js.js"> </script>
+    </div>
+    <footer style="background-color: #E3E8E8;">
+        <div class="foot" style="margin-top: 70px;">
+            <table class="table1" width="43%">
+                <tr>
+                    <th style="font-size: 21px;">Legal Terms</th>
+                    <th style="font-size: 21px;">Customer Care</th>
+                </tr>
+                <tr>
+                    <td>Website Terms</td>
+                    <td>Track your Order</td>
+                </tr>
+                <tr>
+                    <td>Privacy Policy</td>
+                    <td>Returns and Exchnages</td>
+                </tr>
+                <tr>
+                    <td>Supplier Code of Conduct</td>
+                    <td>Cancelling or Changing an order</td>
+                </tr>
+                <tr>
+                    <td>Terms of services</td>
+                    <td>Damaged or defected Items</td>
+                </tr>
+            </table>
+            <div class="entry">
+                <table class="table3" width="25%">
+                    <tr>
+                        <td>
+                            <form>
+                                <select name="Region">
+                                    <option value="1">Choose Your Region</option>
+                                    <option value="2"> Nepal </option>
+                                    <option value="3">India</option>
+                                    <option value="4"> China</option>
+                                    <option value="5">Japan</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <form class="form1">
+                            <textarea rows="4" cols="25" name="message" placeholder="Enter suggestions for us"></textarea>
+                            <br>
+                            <br>
+                            <input type="submit" value="Submit">
+                        </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="table2" width="37%">
+                    <tr>
+                        <td rowspan="2"><img class="image" src="/images/location.png" width="50px"></td>
+                        <td style="padding-left: 37px;">977-9867890234</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 35px;">Thapagaun-10, Kathmandu, Nepal</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="foot1">
+            <div class="copyright">
+                &copy; <b>2023 InkBuzz.</b> All Rights Reserved
+            </div>
+            <div class="media">
+                <div class="socials">
+                    <ul>
+                    <li class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/instagram.png"></a></li>
+                    <li  class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/facebook.png"></a></li>
+                    <li  class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/linkedin.png"></a></li>
+                    <li  class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/twitter.png"></a></li>
+                    <li  class="point"><a href="#" target="_blank" class="links"><img class="socialmedia" src="/images/youtube.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="emoji">Visit again &nbsp;<b>ʕ´•ᴥ•`ʔ</b></div>
+        </div>
+    </footer>
+</body>
+</html>
